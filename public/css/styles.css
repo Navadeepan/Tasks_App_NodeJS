@@ -1,0 +1,206 @@
+body {
+  background-color:teal;
+}
+
+h1 {
+  color: #7037e9;
+  font-family:'Trebuchet MS';
+  font-size:  40px;
+  padding: 10px;
+}
+
+.box1 {
+  width: 50%;
+  margin: 0 auto;
+  max-width:30%;
+  background-color:azure;
+  text-align: center;
+  margin-top: 60px;
+  
+}
+
+.box2 {
+  width: 50%;
+  margin: 0 auto;
+  
+  padding-top: 10px;
+  max-width: 30%;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: azure;
+  text-align: center;
+}
+
+#heading {
+  text-align: center;
+  font-size: 45px;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 40px;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  font-weight: 200;
+  width: 313px;
+}
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 tomato;
+}
+::placeholder {
+  opacity: 1;
+}
+
+p {
+  width: 50%;
+  margin: 0 auto;
+  font-family:'Trebuchet MS';
+  font-size: 20px;
+  text-align:left;
+  overflow-wrap:break-word;
+  margin-left: 40px;
+}
+
+.item{
+  margin-top: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+/*CheckBox*/
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.control input {
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background:rgb(230, 192, 142);
+}
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: rgb(230, 192, 142);
+}
+.control input:checked ~ .control__indicator {
+  background: #2aa1c0;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #0e647d;
+}
+.control input:disabled ~ .control__indicator {
+  background: #ffffff;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+
+/*Button*/
+/* General button style (reset) */
+.btn {
+  border: none;
+  font-family:'Trebuchet MS';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 15px 60px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+  font-family: "icomoon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Button 6 */
+.btn-6 {
+  color: #fff;
+  background: #226fbe;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.btn-6:active {
+  top: 2px;
+}
+
+/* Button 6b */
+.btn-6b {
+  border: 4px solid #226fbe;
+  border-radius: 15px;
+}
+
+.btn-6b:hover {
+  background: transparent;
+  color: #226fbe;
+}
+

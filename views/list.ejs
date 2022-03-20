@@ -1,0 +1,64 @@
+<%- include("header") -%>
+<div class="box1" id="heading">       
+    <h1>Tasks To-do</h1>
+</div>        
+<div class="box2">       
+
+<% for(var i=0;i<newListItem.length;i++) { %>
+<form action="/delete" method="post">
+     <div class="item">
+        <div class="item">
+            <label class="control control--checkbox">
+                <p><%= newListItem[i].name %></p>
+                <input type="checkbox"name="checkbox" value="<%= newListItem[i]._id%>"  onChange="this.form.submit()" id="checkbox"/>
+                <div class="control__indicator"></div>
+            </label>
+        </div>        
+</form> 
+<% } %>
+
+<!-- <form >
+    <div class="item">
+        <div class="round">
+        <input type="checkbox" id="checkbox">         
+        <label for="checkbox"></label>
+        </div>
+        <p>Enjoy the party</p>
+        <br>
+    </div>
+</form>
+<form >
+    <div class="item">
+        <div class="round">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox"></label>
+        </div>
+        <p>IT Buddies welcomes you</p>
+        <br>
+     </div>         
+</form>
+<form >
+    <div class="item">
+        <div class="round">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox"></label>
+        </div>
+        <p>PLS like</p>
+        <br>
+     </div>
+</form>
+<form >
+    <div class="item">
+        <div class="round">
+        <input type="checkbox"id="checkbox">
+        <label for="checkbox"></label>
+        </div>
+        <p>HEY GUYS</p>
+        <br>
+        </div>         
+    </form>          -->
+    <form class="item" action="/" method="post">
+        <hr><input type="text" name="n"  placeholder="Enter new task"><hr>
+        <button type="submit" class="btn btn-6 btn-6b">Add task</button> 
+    </form>
+</div>
