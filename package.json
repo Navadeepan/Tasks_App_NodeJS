@@ -1,0 +1,33 @@
+{
+  "name": "tasks_app_nodejs",
+  "version": "1.0.0",
+  "description": "CRUD application using nodeJS, ExpressJS and Mongo DB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Navadeepan/Tasks_App_NodeJS.git"
+  },
+  "keywords": [
+    "tasks",
+    "todo",
+    "nodeJS",
+    "expressJS",
+    "mongoDB"
+  ],
+  "author": "Navadeepan B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Navadeepan/Tasks_App_NodeJS/issues"
+  },
+  "homepage": "https://github.com/Navadeepan/Tasks_App_NodeJS#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7",
+    "nodemon": "^2.0.15"
+  }
+}
